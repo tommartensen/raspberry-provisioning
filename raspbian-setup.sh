@@ -3,10 +3,10 @@
 passwd
 mkdir /home/pi/code
 sudo apt-get update && sudo apt-get upgrade
-sudo apt-get install -y python3-pip python3-smbus i2c-tools git
+sudo apt-get install -y oracle-java8-jdk python3-pip python3-smbus i2c-tools git
 curl -fsSL get.docker.com | sh
 sudo usermod -aG docker pi
-sudo pip install docker-compose
+sudo pip3 install docker-compose
 sudo service ssh start
 
 sudo update-rc.d ssh defaults
